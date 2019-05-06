@@ -2,22 +2,24 @@
     <string name="app_name">TimeTable</string>
 
     <array name="Days">
-        <item>"monday"</item>
-        <item>"tuesday"</item>
-        <item>"wednesday"</item>
-        <item>"thursday"</item>
-        <item>"friday"</item>
+        <item>"월요일"</item>
+        <item>"화요일"</item>
+        <item>"수요일"</item>
+        <item>"목요일"</item>
+        <item>"금요일"</item>
+        <item>"토요일"</item>
+        <item>"일요일"</item>
     </array>
     <array name="Time">
-        <item>8AM - 9AM</item>
-        <item>9AM - 10AM</item>
-        <item>10AM - 11AM</item>
-        <item>11AM - 12PM</item>
-        <item>12PM - 1PM</item>
-        <item>2PM - 3PM</item>
-        <item>3PM - 4PM</item>
-        <item>4PM - 5PM</item>
-        <item>5PM - 6PM</item>
+        <item>08:00 ~ 09:00</item>
+        <item>09:00 ~ 10:00</item>
+        <item>10:00 ~ 11:00</item>
+        <item>11:00 ~ 12:00</item>
+        <item>12:00 ~ 13:00</item>
+        <item>14:00 ~ 15:00</item>
+        <item>15:00 ~ 16:00</item>
+        <item>16:00 ~ 17:00</item>
+        <item>17:00 ~ 18:00</item>
     </array>
     <array name="TimeSQL">
         <item>eighttonine</item>

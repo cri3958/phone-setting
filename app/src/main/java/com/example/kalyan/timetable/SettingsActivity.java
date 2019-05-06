@@ -41,8 +41,8 @@ public class SettingsActivity extends AppCompatActivity{
         project_time = (LinearLayout) findViewById(R.id.set_proj_notification);
          notify_time = (LinearLayout) findViewById(R.id.set_notification);
 
-        aSwitch = (Switch) findViewById(R.id.switch2);
-        aSwitch.setChecked(pref.getBoolean(SHOW_NOTIFICATION, false));
+        //aSwitch = (Switch) findViewById(R.id.switch2);
+        //aSwitch.setChecked(pref.getBoolean(SHOW_NOTIFICATION, false));
         //Toast.makeText(getContext(),pref.getBoolean(SHOW_NOTIFICATION, false)+"",Toast.LENGTH_LONG).show();
         reset = (LinearLayout) findViewById(R.id.reset);
         reset.setOnClickListener(new View.OnClickListener() {
@@ -54,14 +54,14 @@ public class SettingsActivity extends AppCompatActivity{
 
             }
         });
-        aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        /*aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 SharedPreferences.Editor editor = pref.edit();
                 editor.putBoolean(SHOW_NOTIFICATION,isChecked);
                 editor.apply();
             }
-        });
+        });*/
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         int hour = prefs.getInt(PROJECT_HOUR,12);

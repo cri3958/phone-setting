@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:textColor="#1A237E"
-        android:text="Show Notification" />
+        android:text="어플 알림 off/on(사용하면 어플이 팅겨서 지워둠)" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reset Database"
+            android:text="일정 초기화 하기"
             android:paddingTop="16dp"
 
             android:textColor="#1A237E"
@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Clear all data related to your timetable"
+            android:text="클릭시 모든 일정이 초기화되니 주의하세요"
             android:paddingBottom="16dp"
 
             />

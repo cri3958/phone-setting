@@ -9,7 +9,7 @@ import com.daimajia.androidanimations.library.Techniques;
 import com.viksaa.sssplash.lib.activity.AwesomeSplash;
 import com.viksaa.sssplash.lib.cnst.Flags;
 import com.viksaa.sssplash.lib.model.ConfigSplash;
-
+//어플켜지는시간 단축
 public class SplashActivity extends AwesomeSplash {
 
     LinearLayout view ;
@@ -19,7 +19,7 @@ public class SplashActivity extends AwesomeSplash {
         /* you don't have to override every property */
         //Customize Circular Reveal
         configSplash.setBackgroundColor(R.color.lightIndigio); //any color you want form colors.xml
-        configSplash.setAnimCircularRevealDuration(1200); //int ms
+        configSplash.setAnimCircularRevealDuration(200); //int ms
         configSplash.setRevealFlagX(Flags.REVEAL_RIGHT);  //or Flags.REVEAL_LEFT
         configSplash.setRevealFlagY(Flags.REVEAL_BOTTOM); //or Flags.REVEAL_TOP
 
@@ -27,13 +27,13 @@ public class SplashActivity extends AwesomeSplash {
 
         //Customize Logo
         configSplash.setLogoSplash(R.mipmap.ic_launcher2); //or any other drawable
-        configSplash.setAnimLogoSplashDuration(1000); //int ms
+        configSplash.setAnimLogoSplashDuration(500); //int ms
         configSplash.setAnimLogoSplashTechnique(Techniques.FadeIn); //choose one form Techniques (ref: https://github.com/daimajia/AndroidViewAnimations)
 
         configSplash.setTitleSplash("  ");
         configSplash.setTitleTextColor(R.color.darkIndigo);
         configSplash.setTitleTextSize(50f); //float value
-        configSplash.setAnimTitleDuration(750);
+        configSplash.setAnimTitleDuration(500);
         configSplash.setAnimTitleTechnique(Techniques.ZoomIn);
         //configSplash.setTitleFont("fonts/myfont.ttf"); //provide string to your font located in assets/fonts/
     }

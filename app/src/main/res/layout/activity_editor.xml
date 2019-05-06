@@ -28,7 +28,7 @@
             <AutoCompleteTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Subject"
+                android:hint="하는 일"
                 android:textColor="#333"
                 android:id="@+id/subject"
                 android:textSize="15sp"
@@ -45,7 +45,7 @@
                 android:id="@+id/room"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Room"
+                android:hint="장소"
                 android:textColor="#333"
                 android:textSize="15sp" />
 

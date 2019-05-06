@@ -1,5 +1,5 @@
 package com.example.kalyan.timetable;
-//showTut의 안내문구 변경
+//showTut의 안내문구 변경, 요일 한글화, 메뉴탭 한글화
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -71,8 +71,8 @@ public class MainActivity extends FragmentActivity {
 
           mainActivity = this;
           context = this;
-          String navigationSt[] = new String[]{"Projects          ","Tutorial          ","Attendence Manager       ","Poll      ","Settings          ",
-                  "Share          ", "About           "};
+          String navigationSt[] = new String[]{"과제          ","튜토리얼          ","Attendence Manager       ","Poll      ","설정          ",
+                  "의견보내기           "};
           int navigationImg[] = new int[]{R.mipmap.ic_proj,R.mipmap.ic_tut,R.mipmap.ic_att,R.mipmap.ic_poll,R.mipmap.ic_settings,
                   R.mipmap.ic_share,R.mipmap.ic_people};
           MyDrawerAdapter navigationAdapter = new MyDrawerAdapter(getApplicationContext(), navigationSt
@@ -88,11 +88,13 @@ public class MainActivity extends FragmentActivity {
           });
           FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
-                .add("MONDAY", Monday.class)
-                .add("TUESDAY", Tuesday.class)
-                 .add("WEDNESDAY",Wednesday.class)
-                  .add("THURSDAY",Thursday.class)
-                  .add("FRIDAY",Friday.class)
+                .add("월요일", Monday.class)
+                .add("화요일", Tuesday.class)
+                  .add("수요일",Wednesday.class)
+                  .add("목요일",Thursday.class)
+                  .add("금요일",Saturday.class)
+                  .add("토요일",Saturday.class) //탭을 추가는 하였으나 실행되진 않음.
+                  .add("일요일",Sunday.class)
                 .create());
 
          // Calendar c = Calendar.getInstance();
@@ -116,7 +118,7 @@ public class MainActivity extends FragmentActivity {
               @Override
               public void onPageSelected(int position) {
                   currentPage = position;
-//                  Toast.makeText(getApplicationContext(),""+currentPage,Toast.LENGTH_SHORT).show();
+                  //Toast.makeText(getApplicationContext(),""+currentPage,Toast.LENGTH_SHORT).show();
               }
               @Override
               public void onPageScrollStateChanged(int state) {
